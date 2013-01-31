@@ -24,6 +24,7 @@ public class Game {
 	public static final int EXIT_SUCCESS =  0;
 	public static final int EXIT_ERROR   = -1;
 	private ArrayList<Player> players;
+	private static int roffel = 1;
 	int turns = 6;
 	
 	public static void main(String argv[])
@@ -32,6 +33,10 @@ public class Game {
 		{
 			int i = Integer.parseInt(argv[0]);
 			new Game(i);
+			if(roffel==1)
+			{
+				System.out.println("rofl");
+			}
 		}
 		catch (Exception e)
 		{
